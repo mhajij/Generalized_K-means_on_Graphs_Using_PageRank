@@ -82,7 +82,7 @@ The algorithm can be utlized to obtain a clustering algorithm for point cloud. F
 python main_pointcloud.py -pc circles.npy -k 2 -nbrs 5 
 ```
 
-Utilizing PageRank as the centralitiy measure subroutine is fast but it can lead to sub-optimal clustering results. If qualtiy of clusters are disrable then other centraltiy measures such as harmonic centrality are recoemnded. The script support many centrality measure. For instance one can specify harmonic centrality  
+Utilizing PageRank as the centrality measure subroutine is fast but it can lead to sub-optimal clustering results. If qualtiy of clusters are disrable then other centrality measures such as harmonic centrality are recommended. The script supports many centrality measures. For instance one can specify harmonic centrality on the moon dataset:  
 
 
 ```ruby
