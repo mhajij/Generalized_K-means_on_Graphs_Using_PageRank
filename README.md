@@ -13,7 +13,7 @@ The script demonstrated here can be applied to obtain cluster graphs as well as 
 * scikit-learn >= 0.23.2
 * NumPy 
 
-## Simple Example
+## Getting Started : detecting communities in a complex network 
 
 
 ```ruby
@@ -37,6 +37,34 @@ draw.draw_graph_partition()
 ```
 
 
+### Getting Started : centrality measure-based point clouds clustering
+
+```ruby
+import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+
+from graphkmeans import GraphKMeansOnPointCloud
+
+# (1) define the point cloud
+
+n_samples=700
+noise=0.06
+
+X,_ = datasets.make_circles(n_samples=n_samples, noise=noise,factor=.5)  
+
+# (2) Run the clustering algorithm
+
+PCKM=GraphKMeansOnPointCloud(X,k=2,neighbors=5)  
+d=PCKM.fit()
+
+# (3) plot to inspect the results
+
+plot_point_cloud(X,d)
+```
+
+
+
 ### Using the script for graph clustering 
 
 The algorithm can be utilized to obtain cluster on a given graph. Two main arguments are assumed : the input graph G and the number of cluster k. The following is an example.
@@ -45,7 +73,7 @@ The algorithm can be utilized to obtain cluster on a given graph. Two main argum
 python main_graphkmeans.py -G graph_example.graph -k 4
 ```
 
-### Using the script for point clouds clustering
+### Using the script for centrality measure-based point clouds clustering
 
 The algorithm can be utlized to obtain a clustering algorithm for point cloud. For instance the following computes the algorithm on 2 centric circles dataset with k=2 and default centrality measure set to PageRank.  
 
@@ -55,9 +83,11 @@ python main_pointcloud.py -pc circles.npy -k 2 -nbrs 5
 
 Utilizing PageRank as the centralitiy measure subroutine is fast but it can lead to sub-optimal clustering results. If qualtiy of clusters are disrable then other centraltiy measures such as harmonic centrality are recoemnded. The script support many centrality measure. For instance one can specify harmonic centrality  
 
+
 ```ruby
 main_pointcloud.py -pc moon.npy -k 2 -nbrs 5 -c harmonic_centrality
 ```
+
 
 
 ## Cite
