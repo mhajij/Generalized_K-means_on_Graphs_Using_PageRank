@@ -43,6 +43,7 @@ draw.draw_graph_partition()
 import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
+from sklearn import datasets
 
 from graphkmeans import GraphKMeansOnPointCloud
 
