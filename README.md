@@ -29,10 +29,11 @@ main_pc.py -pc moon.npy -k 2 -nbrs 5 -c harmonic_centrality
 
 
 ## Citation
-
+```ruby
 @article{hajij2020generalized,
   title={Generalized K-means for Metric Space Clustering Using PageRank},
   author={Hajij, Mustafa and Said, Eyad and Todd, Robert},
   year={2020},
   publisher={The Eurographics Association}
 }
+```
