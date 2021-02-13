@@ -73,7 +73,7 @@ plot_point_cloud(X,d)
 The algorithm can be utilized to obtain cluster on a given graph. Two main arguments are assumed : the input graph G and the number of cluster k. The following is an example.
 
 ```ruby
-python main_graphkmeans.py -G graph_example.graph -k 4
+python main_graphkmeans.py -G data/graph_example.graph -k 4
 ```
 
 ### Using the script for centrality measure-based point clouds clustering
@@ -81,14 +81,14 @@ python main_graphkmeans.py -G graph_example.graph -k 4
 The algorithm can be utlized to obtain a clustering algorithm for point cloud. For instance the following computes the algorithm on 2 centric circles dataset with k=2 and default centrality measure set to PageRank.  
 
 ```ruby
-python main_pointcloud.py -pc circles.npy -k 2 -nbrs 5 
+python main_pointcloud.py -pc data/circles.npy -k 2 -nbrs 5 
 ```
 
 Utilizing PageRank as the centrality measure subroutine is fast but it can lead to sub-optimal clustering results. If qualtiy of clusters are disrable then other centrality measures such as harmonic centrality are recommended. The script supports many centrality measures. For instance one can specify harmonic centrality on the moon dataset:  
 
 
 ```ruby
-main_pointcloud.py -pc moon.npy -k 2 -nbrs 5 -c harmonic_centrality
+main_pointcloud.py -pc data/moon.npy -k 2 -nbrs 5 -c harmonic_centrality
 ```
 
 
