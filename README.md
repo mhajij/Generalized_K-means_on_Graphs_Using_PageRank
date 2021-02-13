@@ -13,7 +13,29 @@ The script demonstrated here can be applied to obtain cluster graphs as well as 
 * scikit-learn >= 0.23.2
 * NumPy 
 
-## Getting Started
+## Simple Example
+
+
+```ruby
+import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+
+from graphkmeans import GraphKMeans
+
+# (1) define the graph
+G = nx.random_geometric_graph(350, 0.115)
+
+# (2) Run the clustering algorithm
+graph_k_means=GraphKMeans(G,k=4,n_iter=10,centrality_method="page_rank")               
+d=graph_k_means.fit() # returns a dictionary with keys are nodes of the graph, values are id of the clusters
+
+# (3) plot to inspect the clustering results
+draw=graph_parition_plot(G,d)    
+draw.draw_graph_partition()
+
+```
+
 
 ### Using the script for graph clustering 
 
