@@ -7,28 +7,39 @@ https://diglib.eg.org/xmlui/bitstream/handle/10.2312/cgvc20201152/063-066.pdf?se
 
 The script demonstrated here can be applied to obtain cluster graphs as well as point clouds.
 
-## Downloading the repo
+## Package Requirement
+
+* NetworkX >= 2.0 (Based Graph library)
+* scikit-learn >= 0.23.2
+* NumPy 
 
 
-## Using the script on graphs 
+## Getting Started
 
+###Using the script on graphs 
 
-## Using the script on point clouds
+The algorithm can be utilized to obtain cluster on a given graph. Two main arguments are assumed : the input graph G and the number of cluster k. The following is an example.
+
+```ruby
+python main_graphkmeans.py -G graph_example.graph -k 4
+```
+
+### Using the script on point clouds
 
 The algorithm can be utlized to obtain a clustering algorithm for point cloud. For instance the following computes the algorithm on 2 centric circles dataset with k=2 and default centrality measure set to PageRank.  
 
 ```ruby
-python main_pc.py -pc circles.npy -k 2 -nbrs 5 
+python main_pointcloud.py -pc circles.npy -k 2 -nbrs 5 
 ```
 
 Utilizing PageRank as the centralitiy measure subroutine is fast but it can lead to sub-optimal clustering results. If qualtiy of clusters are disrable then other centraltiy measures such as harmonic centrality are recoemnded. The script support many centrality measure. For instance one can specify harmonic centrality  
 
 ```ruby
-main_pc.py -pc moon.npy -k 2 -nbrs 5 -c harmonic_centrality
+main_pointcloud.py -pc moon.npy -k 2 -nbrs 5 -c harmonic_centrality
 ```
 
 
-## Citation
+## Cite
 ```ruby
 @article{hajij2020generalized,
   title={Generalized K-means for Metric Space Clustering Using PageRank},
