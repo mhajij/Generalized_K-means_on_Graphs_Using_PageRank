@@ -11,7 +11,7 @@ https://diglib.eg.org/xmlui/bitstream/handle/10.2312/cgvc20201152/063-066.pdf?se
 
 ## Description of the script
 
-The script demonstrated here can be applied to obtain cluster graphs as well as point clouds.
+The script demonstrated here can be applied to detect communities in graphs or to detect clusters in point clouds.
 
 ## Package Requirement
 
