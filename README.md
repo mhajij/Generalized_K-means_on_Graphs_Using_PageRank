@@ -4,14 +4,14 @@ Generalized K-means on graph is an algorithm that utilizes centrality measures s
 ![Alt text](/data/fig_1.png?raw=true "Title")
 
 
-The algorithm is generable and is applicable to graphs, meshes, point clouds and even metric spaces. The details of the algorithm are described in the paper :
+The algorithm is general and is applicable to graphs, meshes, point clouds and even metric spaces. The details of the algorithm are described in the paper :
 
 https://diglib.eg.org/xmlui/bitstream/handle/10.2312/cgvc20201152/063-066.pdf?sequence=1
 
 
 ## Description of the script
 
-The script demonstrated here can be applied to obtain cluster graphs as well as point clouds.
+The script demonstrated here can be applied to detect communities in graphs or to detect clusters in point clouds.
 
 ## Package Requirement
 
