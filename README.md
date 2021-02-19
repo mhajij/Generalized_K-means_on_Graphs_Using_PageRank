@@ -17,9 +17,9 @@ For a given graph G and number of clusters k, the algorithm a partition of the g
 Notice that the above algorithm is applicable to graphs, meshes, point clouds and even metric spaces. 
 
 
-On graphs/meshes : it is precisly as written above.
-On metric spaces : one needs to replace the PageRank by a centrality measure suitable for metric spaces: harmonic centrality only utilizes the metric properties.
-On point clouds : One may define the neighborhood graph on in the input point cloud and then run the above graph-based algorithm given above. The implementation is provided below.
+* On graphs/meshes : it is precisly given in the psuedocode above.
+* On metric spaces : one needs to replace the PageRank by a centrality measure suitable for metric spaces: harmonic centrality only utilizes the metric properties.
+* On point clouds : One may define the neighborhood graph on in the input point cloud and then run the above graph-based algorithm given above. The implementation is provided below.
 
 Noice also that Pagerank, considered as a centrality measure, can be replaced by any suitable centrality measure. The script here supports most of the centrality measures given in NetworkX.
 
