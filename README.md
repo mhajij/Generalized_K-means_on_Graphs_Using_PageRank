@@ -1,13 +1,16 @@
 # Generalized k-means on Graphs
 Generalized K-means on graph is an algorithm that utilizes centrality measures such as PageRank, harmonic centrality, etc to obtain a k-means-like clustering algorithm on directed and undirected graphs. 
 
-![Alt text](/data/fig_1.png?raw=true "Title")
-
 
 Speifically, on the given graph G, the algorithm proceeds as described in the following :
 
 
 ![Alt text](/data/algorithm.png?raw=true "Title")
+
+
+For a given graph G and number of clusters k, the algorithm a partition of the graph into k communities as in the following examples :
+
+![Alt text](/data/fig_1.png?raw=true "Title")
 
 
 
