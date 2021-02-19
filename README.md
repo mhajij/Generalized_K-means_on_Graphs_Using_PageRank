@@ -89,6 +89,12 @@ d=PCKM.fit()
 plot_point_cloud(X,d)
 ```
 
+For example, the algorithm gives the following output on the following point cloud examples :
+
+![Alt text](/data/pointcloud_clusters.png?raw=true "Title")
+
+Note that the clusters obtained cannot be usually obtained using traditional k-means algorithm on point cloud with the usual Euclidean distance (due to the non-convex nature of the domain).
+
 
 
 ### Using the script for graph clustering 
