@@ -4,7 +4,21 @@ Generalized K-means on graph is an algorithm that utilizes centrality measures s
 ![Alt text](/data/fig_1.png?raw=true "Title")
 
 
-The algorithm is general and is applicable to graphs, meshes, point clouds and even metric spaces. The details of the algorithm are described in the paper :
+Speifically, on the given graph G, the algorithm proceeds as described in the following :
+
+
+![Alt text](/data/algorithm.png?raw=true "Title")
+
+
+
+Notice that the above algorithm is applicable to graphs, meshes, point clouds and even metric spaces. 
+
+
+On graphs/meshes : it is precisly as written above.
+On metric spaces : one needs to replace the PageRank by a centrality measure suitable for metric spaces: harmonic centrality only utilizes the metric properties.
+On point clouds : One may define the neighborhood graph on in the input point cloud and then run the above graph-based algorithm given above. The implementation is provided below.
+
+The details of the algorithm are described in the paper :
 
 https://diglib.eg.org/xmlui/bitstream/handle/10.2312/cgvc20201152/063-066.pdf?sequence=1
 
