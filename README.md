@@ -1,4 +1,4 @@
-# Generalized k-means on Graphs
+# Generalized k-means on Graphs Using PageRank
 Generalized K-means on graph is an algorithm that utilizes centrality measures such as PageRank, harmonic centrality, etc to obtain a k-means-like clustering algorithm on directed and undirected graphs. 
 
 
