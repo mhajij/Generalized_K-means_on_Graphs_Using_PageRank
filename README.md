@@ -14,7 +14,7 @@ For a given graph G and number of clusters k, the algorithm returns a partition 
 
 
 
-Notice that the above algorithm is applicable to graphs, meshes, point clouds and even metric spaces. 
+The above algorithm is applicable to graphs, meshes, point clouds and even metric spaces. In particular, 
 
 
 * On graphs/meshes : it is precisly given in the psuedocode above.
