@@ -8,7 +8,7 @@ Speifically, on the given graph G, number of clusters k, the algorithm proceeds 
 ![Alt text](/data/algorithm.png?raw=true "Title")
 
 
-For a given graph G and number of clusters k, the algorithm a partition of the graph into k communities as in the following examples :
+For a given graph G and number of clusters k, the algorithm returns a partition of the graph into k communities as in the following examples :
 
 ![Alt text](/data/fig_1.png?raw=true "Title")
 
