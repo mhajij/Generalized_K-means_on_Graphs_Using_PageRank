@@ -24,7 +24,7 @@ The above algorithm is applicable to graphs, meshes, point clouds and even metri
 Noice also that Pagerank, considered as a centrality measure, can be replaced by any suitable centrality measure. The script here supports most of the centrality measures given in NetworkX.
 
 
-The details of the algorithm are described in the paper :
+The details of the algorithm are described in the paper (Generalized K-means for Metric Space Clustering Using PageRank) :
 
 https://diglib.eg.org/xmlui/bitstream/handle/10.2312/cgvc20201152/063-066.pdf?sequence=1
 
