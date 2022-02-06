@@ -52,7 +52,7 @@ from graphkmeans import GraphKMeans
 G = nx.random_geometric_graph(350, 0.115)
 
 # (2) Run the clustering algorithm
-graph_k_means=GraphKMeans(G,k=4,n_iter=10,centrality_method="page_rank")               
+graph_k_means = GraphKMeans(G,k=4,n_iter=10,centrality_method="page_rank")               
 d=graph_k_means.fit() # returns a dictionary with keys are nodes of the graph, values are id of the clusters
 
 # (3) plot to inspect the clustering results
@@ -81,8 +81,8 @@ X,_ = datasets.make_circles(n_samples=n_samples, noise=noise,factor=.5)
 
 # (2) Run the clustering algorithm
 
-PCKM=GraphKMeansOnPointCloud(X,k=2,neighbors=5)  
-d=PCKM.fit()
+PCKM = GraphKMeansOnPointCloud(X,k=2,neighbors=5)  
+d = PCKM.fit()
 
 # (3) plot to inspect the results
 
